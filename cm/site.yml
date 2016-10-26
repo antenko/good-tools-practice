@@ -1,0 +1,15 @@
+---
+- hosts: all
+  become: yes
+  roles:
+        - { role: angstwad.docker_ubuntu }
+  tasks:
+     - name: download nodejs
+       shell: curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+     - name: install nodejs
+       apt: name=nodejs state=latest update_cache=true
+     - name: ensure git is installed
+       apt: name=git state=present
+     - name: ensure docker is installed
+       apt: name=git state=present
+
