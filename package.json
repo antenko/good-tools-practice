@@ -13,7 +13,8 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "node index.js"
+    "start": "node index.js",
+    "reporter": "codeclimate-test-reporter"
   },
   "author": "",
   "license": "ISC"
