@@ -13,4 +13,5 @@
        apt: name=git state=present
      - name: ensure docker is installed
        apt: name=git state=present
-
+     - name: ensure yarn is installed
+       npm: name=yarn global=yes state=latest

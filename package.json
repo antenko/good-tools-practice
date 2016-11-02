@@ -2,14 +2,18 @@
   "name": "ps_code_school",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "dependencies": {
     "express": "~4.14.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "codeclimate-test-reporter": "^0.4.0",
+    "jest": "^16.0.2",
+    "supertest": "^2.0.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "node_modules/jest/bin/jest.js",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC"

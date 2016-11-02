@@ -1,6 +1,6 @@
 install: 
-	npm install --no-bin-links
+	yarn
 start:
-	npm start
+	yarn start
 test:
-	npm test
+	yarn test -- --coverage

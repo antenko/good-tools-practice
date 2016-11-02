@@ -38,6 +38,7 @@ Vagrant.configure("2") do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
+  # config.vm.synced_folder "C:/Users/Anton.Ratenko/Documents/ps-codeschool/repo", "/vagrant", type: "smb", mount_options: ["vers=3.02","mfsymlinks"]
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.

@@ -2,3 +2,4 @@ node_modules/
 .vagrant/
 *.retry
 cm/roles/
+yarn-error.log
