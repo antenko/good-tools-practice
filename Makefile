@@ -5,7 +5,7 @@ start:
 test:
 	yarn test
 coverage:
-	yarn test -- --coverage
-	yarn run reporter < coverage/lcov.info
+	npm test -- --coverage
+	npm run reporter < coverage/lcov.info
 
 .PHONY: coverage
